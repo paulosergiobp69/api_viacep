@@ -24,7 +24,10 @@ class UsuarioControllerFactory extends Factory
         return [
             'nome' => $this->faker->word,
         'senha' => $this->faker->word,
-        'login' => $this->faker->word
+        'login' => $this->faker->word,
+        'created_at' => $this->faker->date('Y-m-d H:i:s'),
+        'deleted_at' => $this->faker->date('Y-m-d H:i:s'),
+        'updated_at' => $this->faker->date('Y-m-d H:i:s')
         ];
     }
 }

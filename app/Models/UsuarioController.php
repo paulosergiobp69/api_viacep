@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 /**
  * Class UsuarioController
  * @package App\Models
- * @version April 23, 2024, 11:44 pm UTC
+ * @version April 24, 2024, 8:21 am UTC
  *
  * @property string $nome
  * @property string $senha
@@ -58,7 +58,10 @@ class UsuarioController extends Model
     public static $rules = [
         'nome' => 'nullable|string|max:100',
         'senha' => 'nullable|string|max:100',
-        'login' => 'required|string|max:50'
+        'login' => 'required|string|max:50',
+        'created_at' => 'nullable',
+        'deleted_at' => 'nullable',
+        'updated_at' => 'nullable'
     ];
 
     

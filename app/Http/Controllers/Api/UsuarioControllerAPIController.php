@@ -26,35 +26,10 @@ class UsuarioControllerAPIController extends AppBaseController
     }
 
     /**
-     * @param Request $request
-     * @return Response
-     *
-     * @SWG\Get(
-     *      path="/usuarioControllers",
-     *      summary="Get a listing of the UsuarioControllers.",
-     *      tags={"UsuarioController"},
-     *      description="Get all UsuarioControllers",
-     *      produces={"application/json"},
-     *      @SWG\Response(
-     *          response=200,
-     *          description="successful operation",
-     *          @SWG\Schema(
-     *              type="object",
-     *              @SWG\Property(
-     *                  property="success",
-     *                  type="boolean"
-     *              ),
-     *              @SWG\Property(
-     *                  property="data",
-     *                  type="array",
-     *                  @SWG\Items(ref="#/definitions/UsuarioController")
-     *              ),
-     *              @SWG\Property(
-     *                  property="message",
-     *                  type="string"
-     *              )
-     *          )
-     *      )
+     * 
+     * @OA\Get(
+     *     path="/Usuario",
+     *     @OA\Response(response="200", description="Display a listing of Usuarios.")
      * )
      */
     public function index(Request $request)

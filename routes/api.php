@@ -32,7 +32,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 
-Route::resource('usuario_controllers', App\Http\Controllers\API\UsuarioControllerAPIController::class);
+
+
+
+
 
 
 Route::resource('contato_controllers', App\Http\Controllers\API\ContatoControllerAPIController::class);
+
+
+Route::resource('usuario_controllers', App\Http\Controllers\API\UsuarioControllerAPIController::class);

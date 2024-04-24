@@ -1,16 +1,31 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "My First API",
+        "title": "TESTE API SOMA",
         "version": "0.1"
     },
+    "servers": [
+        {
+            "url": "http://localhost:8000/api"
+        }
+    ],
     "paths": {
-        "/projects": {
+        "/Contato": {
             "get": {
-                "operationId": "35784db4e52882d2ff6599ea623179a7",
+                "operationId": "83afef761e0e436312611342d1ef35b8",
                 "responses": {
                     "200": {
-                        "description": "Display a listing of projects."
+                        "description": "Display a listing of Contatos."
+                    }
+                }
+            }
+        },
+        "/Usuario": {
+            "get": {
+                "operationId": "c9d209b75c66e5d9312ef5c26888e3a6",
+                "responses": {
+                    "200": {
+                        "description": "Display a listing of Usuarios."
                     }
                 }
             }

@@ -14,7 +14,6 @@ use Response;
  * Class ContatoControllerController
  * @package App\Http\Controllers\API
  */
-
 class ContatoControllerAPIController extends AppBaseController
 {
     /** @var  ContatoControllerRepository */
@@ -25,13 +24,13 @@ class ContatoControllerAPIController extends AppBaseController
         $this->contatoControllerRepository = $contatoControllerRepo;
     }
 
-    /**
-     * Display a listing of the ContatoController.
-     * GET|HEAD /contatoControllers
-     *
-     * @param Request $request
-     * @return Response
+     /**
+     * @OA\Get(
+     *     path="/Contato",
+     *     @OA\Response(response="200", description="Display a listing of Contatos.")
+     * )
      */
+
     public function index(Request $request)
     {
         $contatoControllers = $this->contatoControllerRepository->all(

@@ -8,7 +8,7 @@ use App\Repositories\BaseRepository;
 /**
  * Class ContatoControllerRepository
  * @package App\Repositories
- * @version April 24, 2024, 12:47 am UTC
+ * @version April 24, 2024, 7:42 am UTC
 */
 
 class ContatoControllerRepository extends BaseRepository

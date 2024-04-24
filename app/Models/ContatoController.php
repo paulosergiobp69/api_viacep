@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 /**
  * Class ContatoController
  * @package App\Models
- * @version April 24, 2024, 12:47 am UTC
+ * @version April 24, 2024, 7:42 am UTC
  *
  * @property string $nome
  * @property string $cpf
