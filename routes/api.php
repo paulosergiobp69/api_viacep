@@ -17,6 +17,10 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('viacep/{cep}', 'App\Http\Controllers\Api\ViaCepController@getCep');
+//Route::get('usuario/{usr}', 'App\Http\Controllers\Api\UsuarioControllerAPIController@getCep');
+Route::resource('Usuario', 'App\Http\Controllers\Api\UsuarioControllerAPIController');
+Route::resource('Contato', 'App\Http\Controllers\Api\ContatoControllerAPIController');
+
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
@@ -26,3 +30,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 
+
+
+Route::resource('usuario_controllers', App\Http\Controllers\API\UsuarioControllerAPIController::class);
+
+
+Route::resource('contato_controllers', App\Http\Controllers\API\ContatoControllerAPIController::class);
